@@ -1,0 +1,462 @@
+/*Base Styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: #100F11; /*Black Mamba*/
+  background-color: #8D9093; /*Grey Shadow*/
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+ @media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/*Base Styles End*/
+
+/*Navbar*/
+#top-nav {
+  background-color: #8D9093; /*Grey Shadow*/
+}
+#logo-img {
+  background: url('../images/car_logo.png') no-repeat;
+  width: 100px;
+  height: 80px;
+  margin: 0px 3px 0px 25px;
+  float: left;
+} /*Logo*/
+#navbar-brand a {
+  text-decoration: none;
+} /*Brand Name*/
+
+#navbar-brand h1 { /* Brand name */
+  font-family: 'Rubik Moonrocks', cursive;
+  color: #100F11; /*Black Mamba*/
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 10px;
+  transition: all 0.5s ease;
+}
+
+#navbar-brand p{
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -25px;
+  font-family: 'Smooch', cursive;
+}
+
+#navbarLinks {
+  font-family: fantasy;
+  font-size: 1.2rem;
+  padding-right: 15px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #492950; /*Black currant*/
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+  color: #717787; /*Ice Blue Grey*/
+}
+ul.dropdown-menu.show {
+  background-color: #DDDEE0; /*Dark Steel*/
+}
+a.dropdown-item {
+  color: #492950; /*Black currant*/
+}
+
+
+/*NavBar End*/
+
+/*Carousel*/
+#featured-title {
+  position: absolute;
+  top: 1rem;
+  left: 5%;
+}
+#featured {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  color: #E7E3E7; /*Wallflower White*/
+}
+#featured-text {
+  font-family: ariel;
+  font-size: 1.2rem;
+}
+
+
+/*Carousel End*/
+
+
+/*Promo*/
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 3rem;
+    color: #492950; /*Black currant*/
+  }
+
+  #info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #promo{
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  span#pf-mech {
+    font-family: ariel;
+    font-size: .9rem;
+  }
+
+
+/*Promo End*/
+
+/*Filter*/
+  #filter-button {
+    float: right;
+  }
+  .btn-light {
+    font-size: 1rem;
+  }
+
+
+  .filterDiv {  /*for js function*/
+    display: none;
+  }
+  .show { /*for js function*/
+    display: inline-block;
+  }
+
+
+/*Filter End*/
+
+/*Album*/
+  h3 {
+    font-family: 'Yellowtail', cursive;
+    color: #492950; /*Black currant*/
+  }
+  .card-body {
+    background-color: #DDDEE0; /*Dark Steel*/
+    font-size: 1rem;
+    font-family: ariel;
+  }  
+
+  #specs0, #specs1, #specs2, #specs3, #specs4, #specs5, #specs6, #specs7, #specs8, #specs9, #specs10, #specs11 {
+    display: none;
+    margin: 10px 5px;
+  }
+  hr {
+    margin: 0;
+    opacity: .1;
+  }
+  .specs-list {
+    margin-bottom: 2px;
+    font-size: 14px;
+  }
+
+
+/*Album End*/
+
+/*Review*/
+  #post-review {
+    border: none;
+  }
+
+
+/*Review End*/
+
+/*Footer*/
+  #mech-logo {
+    background: url('../images/mech_logo.png') no-repeat;
+    width: 50px;
+    height: 40px;
+    margin-right: 5px;
+    float: left;
+  } /*Logo Mech*/
+  #mech-info {
+    line-height: 1;
+    text-align: center;
+  }
+
+  #pf-mech1 {
+    text-align: center;
+    font-family: ariel;
+    font-size: .9rem;
+    line-height: 1.8;
+  }
+  .text-muted {
+    color: black;
+    font-size: 1.3rem;
+  }
+
+  #copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+/*Footer End*/
+
+
+
+
+
+
+/*Extra Extra Large Devices*/
+@media (min-width: 1400px) {
+  
+  /*Navbar*/
+  .dropdown-menu {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  /*Navbar End*/
+
+
+  /*Carousel*/
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50vw;
+  }
+
+
+   /*Carousel End*/
+
+  #post-review {
+    width: 10vw;
+  }  
+
+
+}
+
+/*Extra Large Devices*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  /*Navbar*/
+    .dropdown-menu {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+/*Navbar End*/
+
+
+  /*Carousel*/
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50vw;
+  }
+
+   /*Carousel End*/
+
+  #post-review {
+    width: 10vw;
+  }
+
+
+}
+
+/*Large Devices*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+  /*Navbar*/
+    .dropdown-menu {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  /*Navbar End*/
+
+
+
+  /*Carousel*/
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50vw;
+  }
+
+ /*Carousel End*/
+
+  #post-review {
+    width: 10vw;
+  }
+
+
+}
+
+/*Medium Devices*/
+@media (min-width: 768px) and (max-width: 992px) {
+  /*Navbar*/
+    .dropdown-menu {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+/*Navbar End*/
+
+
+  /*Carousel*/
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50vw;
+  }
+  #featured {
+    font-size: 1.4rem;
+  }
+  #featured-text {
+    font-size: .8rem;
+  }
+  .btn-dark {
+    font-size: .8rem;
+  }
+
+    /*Carousel End*/
+
+
+  #post-review {
+    width: 10vw;
+  }
+
+
+
+  /*Footer*/
+  ul.nav {
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  section.nav.col {
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  /*Footer End*/
+
+
+}
+
+/*Small Devices*/
+@media (min-width: 576px) and (max-width: 768px) {
+  /*Navbar*/
+   #navbarLinks {
+    font-size: 1rem;
+  }
+
+  /*Navbar End*/
+
+
+  /*Carousel*/
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50vw;
+  }
+
+  #featured {
+    font-size: 1rem;
+  }
+  #featured-text {
+    font-size: .7rem;
+  }
+  .btn-dark {
+    font-size: .6rem;
+  }
+    
+  }
+
+  /*Carousel End*/
+
+
+
+  #post-review {
+    width: 20vw;
+  }
+
+
+/*Footer*/
+  ul.nav {
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  section.nav.col {
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  /*Footer End*/
+
+}
+
+/*Extra Small Devices*/
+@media (max-width: 576px) {
+  /*Navbar*/
+
+    #navbarLinks {
+    font-size: .8rem;
+  }
+  a#featured-nav-link.dropdown-item {
+    pointer-events: none;
+  }
+
+
+  /*Navbar End*/
+
+  /*Carousel*/
+  div#carousel-container.container-fluid.my-2.px-0 {
+    display: none;
+  }
+
+  .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 50vw;
+  }
+
+  /*Carousel End*/
+
+  /*Filter*/
+  #filter-button.btn {
+    font-size: .2rem;
+  }
+
+  /*Filter End*/
+
+
+  #post-review {
+    width: 20vw;
+  }
+
+  /*Footer*/
+
+  ul.nav {
+    justify-content: center;
+    margin: 20px auto;
+  }
+  section.nav.col {
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  /*Footer End*/
+
+}
